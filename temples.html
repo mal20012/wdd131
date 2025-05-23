@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+
+  <!-- CSS files (mobile-first) -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 640px)" />
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)" />
+
+  <!-- JavaScript -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <!-- Hamburger button (visible in mobile view only) -->
+    <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
+    
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples Around the World</h1>
+    <!-- 9 figures with placeholder images -->
+    <figure>
+      <img src="images/temple-placeholder.jpg" alt="Temple 1" />
+      <figcaption>Temple 1</figcaption>
+    </figure>
+    <!-- Repeat for Temples 2 to 9... -->
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
