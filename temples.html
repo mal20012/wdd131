@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Album</title>
 
-  <!-- CSS files (mobile-first) -->
-  <link rel="stylesheet" href="styles/base.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="temples.css" />
   <link rel="stylesheet" href="styles/medium.css" media="(min-width: 640px)" />
   <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)" />
 
   <!-- JavaScript -->
-  <script src="scripts/temples.js" defer></script>
+  <script src="temples.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Temple Album</h1>
-    <!-- Hamburger button (visible in mobile view only) -->
+    <!-- Hamburger menu button (mobile only) -->
     <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
-    
+
     <nav id="mainNav">
       <ul>
         <li><a href="#">Home</a></li>
@@ -32,16 +35,47 @@
 
   <main>
     <h1>Temples Around the World</h1>
-    <!-- 9 figures with placeholder images -->
+
     <figure>
-      <img src="images/temple-placeholder.jpg" alt="Temple 1" />
-      <figcaption>Temple 1</figcaption>
+      <img src="images/nairobi.jpg" alt="Kenya Nairobi Temple" />
+      <figcaption>Kenya Nairobi Temple</figcaption>
     </figure>
-    <!-- Repeat for Temples 2 to 9... -->
+    <figure>
+      <img src="images/Accra.jpg" alt="Ghana Accra Temple" />
+      <figcaption>Ghana Accra Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple3.jpg" alt="Paris France Temple" />
+      <figcaption>Paris France Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple4.jpg" alt="Rome Italy Temple" />
+      <figcaption>Rome Italy Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple5.jpg" alt="Tokyo Japan Temple" />
+      <figcaption>Tokyo Japan Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple6.jpg" alt="Accra Ghana Temple" />
+      <figcaption>Accra Ghana Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple7.jpg" alt="Tijuana Mexico Temple" />
+      <figcaption>Tijuana Mexico Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple8.jpg" alt="Bern Switzerland Temple" />
+      <figcaption>Bern Switzerland Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/temple9.jpg" alt="Bangkok Thailand Temple" />
+      <figcaption>Bangkok Thailand Temple</figcaption>
+    </figure>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Alice Malabi. All rights reserved.</p>
     <p>Last updated: <span id="lastModified"></span></p>
   </footer>
 </body>
