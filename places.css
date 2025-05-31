@@ -1,0 +1,71 @@
+/* CSS Variables */
+:root {
+  --color-primary: #22577a;
+  --color-secondary: #57cc99;
+  --color-accent: #80ed99;
+  --color-background: #c7f9cc;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.data-box,
+.weather-box {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 300px;
+  flex: 1;
+}
+
+.weather-box h2::after {
+  content: '⛅';
+  margin-left: 0.5rem;
+}
+
+.main-image {
+  flex: 2 100%;
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+}
