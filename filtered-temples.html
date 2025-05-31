@@ -3,76 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temple Album</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
-
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="styles/temples.css" />
-  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 640px)" />
-  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)" />
-
-  <!-- JavaScript -->
-  <script src="scripts/temples.js" defer></script>
+  <title>Filtered Temples</title>
+  <link rel="stylesheet" href="filtered-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <script src="filtered-temples.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Temple Album</h1>
-    <!-- Hamburger menu button (mobile only) -->
-    <button id="hamburgerBtn" aria-label="Toggle Navigation">☰</button>
-
-    <nav id="mainNav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
+    <button id="hamburgerBtn">☰</button>
+    <nav id="mainNav" class="nav">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Temples Around the World</h1>
-
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/320x200/manila-philippines-temple-lds-129585-wallpaper.jpg" alt="Manila Philippines Temple" />
-      <figcaption>Manila Philippines Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/200x320/hawaii-temple-761091-wallpaper.jpg" alt="Laie Hawaii Temple" />
-      <figcaption>Laie Hawaii Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-exterior-1905503.jpg" alt="Paris France Temple" />
-      <figcaption>Paris France Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brisbane-australia/400x250/brisbane-australia-temple-lds-901526-wallpaper.jpg" alt="Brisbane Australia Temple" />
-      <figcaption>Brisbane Australia Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/200x320/tokyo_japan_temple-evening.jpeg" alt="Tokyo Japan Temple" />
-      <figcaption>Tokyo Japan Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/320x180/accra-ghana-temple-detail-249022-2400x1200.jpg" alt="Accra Ghana Temple" />
-      <figcaption>Accra Ghana Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bogota-colombia/400x250/bogota-colombia-temple-lds-1029726-wallpaper.jpg" alt="Bogota Colombia Temple" />
-      <figcaption>Bogota Colombia Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bern-switzerland/400x250/bern-switzerland-temple-lds-653038-wallpaper.jpg" alt="Bern Switzerland Temple" />
-      <figcaption>Bern Switzerland Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg" alt="Durban Temple" />
-      <figcaption>Durban Temple</figcaption>
-    </figure>
-  </main>
+  <main id="templeContainer"></main>
 
   <footer>
     <p>&copy; <span id="year"></span> Alice Malabi. All rights reserved.</p>
@@ -80,3 +29,10 @@
   </footer>
 </body>
 </html>
+
+
+      
+
+   
+
+   
