@@ -1,23 +1,30 @@
-/* CSS Variables */
+/* Import fonts in your HTML head */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&family=Playfair+Display&display=swap');
+
 :root {
-  --color-primary: #22577a;
-  --color-secondary: #57cc99;
-  --color-accent: #80ed99;
-  --color-background: #c7f9cc;
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --color-primary: #335c67;
+  --color-secondary: #9e2a2b;
+  --color-accent: #e09f3e;
+  --color-background: #fff3b0;
+  --color-deep: #540b0e;
+
+  --font-base: 'Nunito', 'Segoe UI', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-button: 'Montserrat', sans-serif;
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: var(--color-background);
-  color: var(--color-primary);
+  font-family: 'Nunito', 'Segoe UI', sans-serif;
+  background-color: #fff3b0;
+  color: #335c67;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: var(--color-primary);
+  background-color: #335c67;
   color: white;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
@@ -32,12 +39,20 @@ header {
 
 .data-box,
 .weather-box {
-  background-color: var(--color-secondary);
+  background-color: #e09f3e;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
   max-width: 300px;
   flex: 1;
+  color:#540b0e ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.data-box:hover,
+.weather-box:hover {
+  transform: translateY(-5px);
 }
 
 .weather-box h2::after {
@@ -52,8 +67,9 @@ header {
 
 footer {
   text-align: center;
-  background-color: var(--color-primary);
+  background-color: #540b0e;
   color: white;
+  font-family: 'Montserrat', sans-serif;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -67,5 +83,6 @@ footer {
   .main-image img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 }
