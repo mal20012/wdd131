@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzania</title>
+
+    k href="('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="places.css">
+    <script src="places.js" defer></script>
+</head>
+<body>
+    <header>Tanzania</header>
+
+    <div class="container">
+        <div class="data-box">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 945,087 km²</p>
+            <p><strong>Population:</strong> ~61 million</p>
+            <p><strong>Capital:</strong> Dodoma</p>
+            <p><strong>Languages:</strong> Swahili, English</p>
+            <p><strong>Currency:</strong> Tanzanian Shilling (TZS)</p>
+            <p><strong>Timezone:</strong> EAT (UTC+3)</p>
+            <p><strong>Calling Code:</strong> +255</p>
+            <p><strong>Internet TLD:</strong> .tz</p>
+        </div>
+
+        <div class="main-image">
+            <picture>
+                <source type="image/webp" media="(max-width: 600px)" srcset="images/tanzania-small.webp">
+                <source type="image/webp" media="(max-width: 1200px)" srcset="images/tanzania-medium.webp">
+                <img src="https://www.istockphoto.com/photo/beautiful-landscape-with-acacia-tree-in-african-savannah-and-zebra-on-kilimanjaro-gm1403952272-456320128?searchscope=image%2Cfilm" alt="Scenic view of Tanzania" style="width: 100%; height: auto;">
+            </picture>
+        </div>
+
+        <div class="weather-box">
+            <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/weather-icon.svg">
+            </picture>
+            <p><strong>Temperature:</strong> <span id="temperature">28</span>°C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> <span id="wind">15</span> km/h</p>
+            <p><strong>Windchill:</strong> <span id="windchill">--</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Your Name - Tanzania</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
