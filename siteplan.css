@@ -1,0 +1,88 @@
+/* === Google Fonts Import === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@400;600&display=swap');
+
+/* === Color Palette ===
+- Light Sage: #ccd5ae
+- Soft Olive: #e9edc9
+- Cream: #fefae0
+- Peach Beige: #faedcd
+- Warm Brown: #d4a373
+*/
+
+:root {
+  --sage: #ccd5ae;
+  --olive: #e9edc9;
+  --cream: #fefae0;
+  --peach: #faedcd;
+  --brown: #d4a373;
+
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background-color: var(--cream);
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--brown);
+}
+
+header {
+  background-color: var(--sage);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: var(--olive);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+  background-color: var(--peach);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--sage);
+  font-size: 0.9rem;
+  color: #555;
+}
