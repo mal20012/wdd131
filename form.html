@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Submit your product review including features, rating, and feedback." />
+  <meta name="author" content="Alice Malabi" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Review Form</title>
-  <link rel="stylesheet" href="form.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <main class="container">
     <h1>Product Review</h1>
     <form method="get" action="review.html">
+      
       <!-- Product Name -->
       <label for="product">Product Name:</label>
       <select id="product" name="product" required>
@@ -38,6 +41,7 @@
         <label><input type="checkbox" id="feature1" name="features" value="easyInstall" /> Easy Installation</label>
         <label><input type="checkbox" id="feature2" name="features" value="durable" /> Durable</label>
         <label><input type="checkbox" id="feature3" name="features" value="affordable" /> Affordable</label>
+        <label><input type="checkbox" id="feature4" name="features" value="design" /> Design</label>
       </fieldset>
 
       <!-- Written Review -->
@@ -49,7 +53,7 @@
       <input type="text" id="username" name="username" />
 
       <!-- Submit -->
-      <input type="submit" value="Submit Review" />
+      <input type="submit" value="Submit" />
     </form>
   </main>
 
