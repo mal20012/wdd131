@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Gallery - Bucket List Map</title>
+  <title>Add Destination - Bucket List Map</title>
   <link rel="stylesheet" href="dream.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>📸 Travel Gallery</h1>
+    <div class="logo">
+      <a href="dream_index.html">
+        <img src="logo.png" alt="Dream Destinations Logo" height="40">
+      </a>
+    </div>
+    <h1>➕ Add a Destination</h1>
     <nav>
       <ul>
         <li><a href="dream_index.html">Home</a></li>
@@ -21,20 +26,39 @@
 
   <main>
     <section class="intro">
-      <h2>Memories from Around the World</h2>
-      <p>Browse your favorite photos and moments from your adventures. Add new memories and revisit old ones anytime!</p>
+      <h2>Share Your Dream Spot</h2>
+      <p>Use the form below to add a new destination to your bucket list map.</p>
     </section>
 
-    <section class="gallery-grid">
-      <div class="gallery-item">📍 Victoria Falls <br><img src="https://images.pexels.com/photos/757142/pexels-photo-757142.jpeg" alt="Victoria Falls" width="200"></div>
-      <div class="gallery-item">📍 Burundi <br><img src=https://images.pexels.com/photos/11170087/pexels-photo-11170087.jpeg"" alt="Burundi" width="200"></div>
-      <div class="gallery-item">📍 Cape Town <br><img src="images/capetown.jpg" alt="Cape Town" width="200"></div>
-      <!-- Add more photos here -->
+    <section class="form-section">
+      <form id="destinationForm">
+        <label for="place">Destination Name:</label><br>
+        <input type="text" id="place" name="place" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="notes">Why do you want to go there?</label><br>
+        <textarea id="notes" name="notes" rows="4" required></textarea><br><br>
+
+        <label for="photo">Upload a photo:</label><br>
+        <input type="file" id="photo" accept="image/*"><br><br>
+
+        <button type="submit">Add to Map</button>
+      </form>
+    </section>
+
+    <section class="saved-destinations">
+      <h2>Saved Destinations</h2>
+      <ul id="destinationList"></ul>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Bucket List Map</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
