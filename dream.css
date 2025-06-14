@@ -17,6 +17,24 @@ header {
   height: 40px;
 }
 
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text img {
+  height: 40px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 nav ul {
   list-style-type: none;
   padding: 0;
