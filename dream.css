@@ -1,0 +1,92 @@
+/* Color Palette:
+- Deep Teal: #335c67
+- Light Cream: #fff3b0
+- Golden Orange: #e09f3e
+- Deep Red: #9e2a2b
+- Dark Burgundy: #540b0e
+*/
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff3b0;
+  color: #540b0e;
+}
+
+header {
+  background-color: #335c67;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff3b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e09f3e;
+}
+
+.intro {
+  padding: 2rem;
+  background-color: #e09f3e;
+  text-align: center;
+  color: white;
+}
+
+.intro h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+button {
+  background-color: #9e2a2b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #540b0e;
+}
+
+.map-area {
+  padding: 2rem;
+  text-align: center;
+}
+
+.map-placeholder {
+  background-color: #fff3b0;
+  border: 2px dashed #335c67;
+  padding: 3rem;
+  margin-top: 1rem;
+  color: #335c67;
+  font-style: italic;
+}
+
+footer {
+  background-color: #335c67;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
